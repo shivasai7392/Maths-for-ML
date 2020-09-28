@@ -1,0 +1,25 @@
+A company produces products N1 , . . . , Nn for which resources
+R1 , . . . , Rm are required. To produce a unit of product Nj , aij units of
+resource Ri are needed, where i = 1, . . . , m and j = 1, . . . , n.
+The objective is to find an optimal production plan, i.e., a plan of how
+many units xj of product Nj should be produced if a total of bi units of
+resource Ri are available and (ideally) no resources are left over.
+
+If we produce x1 , . . . , xn units of the corresponding products, we need
+a total of
+            
+            ai1 x1 + · · · + ain xn            (2.2)
+            
+many units of resource Ri . An optimal production plan (x1 , . . . , xn ) ∈ Rn,
+therefore, has to satisfy the following system of equations:
+
+            a11 x1 + · · · + a1n xn = b1
+                                                (2.3)
+            am1 x1 + · · · + amn xn = bm
+            
+where aij ∈ R and bi ∈ R.
+
+Equation (2.3) is the general form of a system of linear equations, and
+x1 , . . . , xn are the unknowns of this system. Every n-tuple (x1 , . . . , xn ) ∈
+Rn that satisfies (2.3) is a solution of the linear equation system.
+

@@ -1,0 +1,53 @@
+1. Find a particular solution to Ax = b.
+2. Find all solutions to Ax = 0.
+3. Combine the solutions from steps 1. and 2. to the general solution.
+
+
+The system of linear equations in the preceding example was easy to
+solve because the matrix in (2.38) has this particularly convenient form,
+which allowed us to find the particular and the general solution by in-
+spection. However, general equation systems are not of this simple form.
+Fortunately, there exists a constructive algorithmic way of transforming
+any system of linear equations into this particularly simple form: Gaussian
+elimination. Key to Gaussian elimination are elementary transformations
+of systems of linear equations, which transform the equation system into
+a simple form. Then, we can apply the three steps to the simple form that
+we just discussed in the context of the example in 
+
+
+ Elementary Transformations
+
+−2x1 + 4x2 − 2x3 − x4 + 4x5 = −3
+4x1 − 8x2 + 3x3 − 3x4 + x5 = 2
+x1 − 2x2 + x3 − x4 + x5 = 0
+x1 − 2x2 − 3x4 + 4x5 = a
+
+  is transformed to 
+  
+x1 − 2x2 + x3 − x4 + x5 = 0
+x3 − x4 + 3x5 = −2
+x4 − 2x5 = 1
+0 = a +1
+
+
+(Row-Echelon Form). A matrix is in row-echelon form if
+All rows that contain only zeros are at the bottom of the matrix; corre-
+spondingly, all rows that contain at least one nonzero element are on
+top of rows that contain only zeros.
+
+Looking at nonzero rows only, the first nonzero number from the left
+(also called the pivot or the leading coefficient) is always strictly to the
+right of the pivot of the row above it.
+
+
+(Reduced Row Echelon Form). An equation system is in reduced
+row-echelon form (also: row-reduced echelon form or row canonical form) if
+It is in row-echelon form.
+Every pivot is 1.
+The pivot is the only nonzero entry in its column
+
+
+(Gaussian Elimination). Gaussian elimination is an algorithm that
+performs elementary transformations to bring a system of linear equations
+into reduced row-echelon form.
+ 

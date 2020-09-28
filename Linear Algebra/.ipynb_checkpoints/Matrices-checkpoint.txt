@@ -1,0 +1,92 @@
+Matrices play a central role in linear algebra. 
+
+
+Definition 2.1 (Matrix). 
+        With m, n ∈ N a real-valued (m, n) matrix A is
+an m·n-tuple of elements aij , i = 1, . . . , m, j = 1, . . . , n, which is ordered
+according to a rectangular scheme consisting of m rows and n columns:
+
+
+Matrix Addition and Multiplication
+
+add = add each element of same index
+
+mul  = we multiply the elements of the ith row of A with the j th column of B and sum them up
+ 
+
+Associativity:
+    ∀A ∈ Rm×n , B ∈ Rn×p , C ∈ Rp×q : (AB)C = A(BC)
+    
+Distributivity:
+    ∀A, B ∈ Rm×n , C, D ∈ Rn×p : (A + B)C = AC + BC
+                                 A(C + D) = AC + AD
+
+Multiplication with the identity matrix:
+    ∀A ∈ Rm×n : I m A = AI n = A
+    
+Inverse and Transpose
+
+(Inverse). Consider a square matrix A ∈ Rn×n . Let matrix
+B ∈ Rn×n have the property that AB = I n = BA. B is called the
+inverse of A and denoted by A−1.
+
+                AB = I = BA.
+
+(Transpose). For A ∈ Rm×n the matrix B ∈ Rn×m with
+bij = aji is called the transpose of A. We write B = AT.
+                                           
+                                           (AT is Transpose of A)
+                AA−1 = I = A−1A
+               (AB)−1 = B−1 . A−1
+               (A + B)−1 != A−1 + B−1
+               (AT)T= A
+               (A + B)T = AT + BT
+               (AB)T = BT . AT
+ 
+(Symmetric Matrix). A matrix A ∈ Rn×n is symmetric if A = AT.
+
+ Multiplication by a Scalar
+
+Associativity:
+    (λψ)C = λ(ψC), C ∈ Rm×n
+    
+    λ(BC) = (λB)C = B(λC) = (BC)λ, B ∈ Rm×n , C ∈ Rn×k .
+    
+    Note that this allows us to move scalar values around.
+    
+    (λC)> = C > λ> = C >λ = λC > since λ = λ> for all λ ∈ R.
+    
+    
+Distributivity:
+    (λ + ψ)C = λC + ψC, C ∈ Rm×n
+    
+    λ(B + C) = λB + λC, B, C ∈ Rm×n
+    
+    
+ Compact Representations of Systems of Linear Equations
+
+
+2x1 + 3x2 + 5x3 = 1
+4x1 − 2x2 − 7x3 = 8
+9x1 + 5x2 − 3x3 = 2
+
+ A = 2  3   5
+     4 -2  -7
+     9  5  -3      (A is a 3x3 matrix)
+     
+ B = x1
+     x2
+     x3            (B is a 3x1 matrix)
+     
+ C = 1
+     8
+     2             (C is a 3x1 matrix)
+     
+     A.B = C
+     
+     
+     we defined this as Ax = b in this book
+
+
+ 
+ 
